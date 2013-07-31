@@ -1,0 +1,18 @@
+
+Problemas de la ejecución concurrente
+=====================================
+
+1. Actualizacion perdida
+2. Actualizacion no comprometida.
+3. Analisis Inconsistente. (combinacion del 1 y 2)
+
+Esquemas de control de concurrencia
+--------
+
+Protocolos basados en el bloqueo (Pag 394)
+-----
+
+-C: Compartido
+-X: Exclusivo
+
+
