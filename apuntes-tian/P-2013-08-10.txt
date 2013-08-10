@@ -1,0 +1,14 @@
+cosas a calificar
+
+indice y porque
+llave compuesta y porque
+columna con valores unicos
+
+revisar que las queries si se puedan hacer!!
+usar permisos de las tablas
+insertar borrar y editar, con el usuario que lo creo (usar user() como default value)
+CURRENT_USER(), CURRENT_USER
+*NO DAR PERMISOS DE CUALIQUIER OTRA COSA, NO TABLAS, SOLO FILAS*
+DB Oracle, lenguaje libre.
+
+procedimientos almacenados
