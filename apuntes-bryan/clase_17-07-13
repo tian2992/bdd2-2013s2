@@ -1,0 +1,37 @@
+Telefono del Ingeniero XD 52299598
+
+Transaccion
+
+Es un conjunto de operaciones de lectura y escritura que se hacen todas o no se hace ninguna en la base de datos
+
+-------------------------------------------------------------------------------
+
+Atomicity Que todas las operaciones de I/O se realicen o ninguna
+
+Consistency La ejecucion aislada de la transaccion, conserva la consistencia de la base de datos.
+
+Isolation
+
+Durability
+
+
+Estados de una Transaccion
+
+Inicio -> Parcialmente Cometido || Fallido -> Comprometida || Abortada
+
+Inicio: Permanece en este estado mientras este en ejecucion
+
+Parcialmente Comprometida: Cuando termina su ultima operacion
+
+Concurrencia
+------------
+
+La productividad del sistema es el numero de transacciones que puede ejecutar en un tiempo dado.
+
+T1					T2
+Leer(A)				
+A:= a - 50
+Escribir (A)
+Leer (B)
+B:= B + 50
+Escribir (B)

@@ -1,0 +1,29 @@
+Protocolos basados en Bloqueo
+
+Bloqueos -> Compartido
+			Exclusivo
+
+Protocolo de bloqueo en dos fases
+
+	Fase de crecimiento
+	Fase de decrecimiento
+
+Variantes
+	
+	P.B. Esctricto en 2 fases
+	P.B Riguroso en 2 fases
+
+Protocolo basado en grafos
+
+
+AQUI VA EL ARBOLITO
+
+
+Protocolo basado en marcas temporales
+
+	Marcas temporales
+	Ordenacion por MT
+
+Regla de escritura de Thomas
+
+
