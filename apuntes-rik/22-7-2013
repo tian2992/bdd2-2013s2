@@ -1,0 +1,47 @@
+PROBLEMAS DE EJECUCION CONCURRENTE
+
+1:					2:
+T1		T2			T3		T4
+Leer (A)				Leer (A)	
+		Leer (A)		A:=A+A(0.1)
+A:=A+100					
+Escribir (A)
+		A:=A+30			Escribir (A)
+		Leer (B)				Leer (A)
+		B=:=B+60-A				A:=A-50
+							Escribir (A)
+		Escribir (B)		Abortar (A)
+		Escribir (A)
+Mostrar (A)
+
+
+Caso 1: Actualizacion perdida.
+
+Caso 2: Actualizacion no comprometida.
+
+Caso 3: Analisis inconsistente. (Combinacion de los 2 casos 1eros.)
+
+**********************************
+
+ESQUEMAS DE CONTROL DE CONCURRENCIA
+
+- Mecanismos que se utilizan para el manejo de transacciones concurrentes.
+
+Protocolos:
+	- Basados en el bloqueo.
+		- Bloqueos
+			- X : Exclusivos
+			- C : Compartidos
+
+				C	X
+			C	si	no
+
+			X	no	no
+
+	- Tipos de protocolos de bloqueo:
+		- 2 Fases: 
+			- Fase de crecimiento.
+				- obtiene los bloqueos.
+			- Fase de decrecimiento.
+				- va liberando bloqueos.
+

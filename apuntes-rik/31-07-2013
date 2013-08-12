@@ -1,0 +1,90 @@
+bdd2.usac@gmail.com - lab
+sab 9:40-10:50
+
+exposicion: 19/08/2013	-	max 20 min, video, 
+
+Tema	- > Titulo
+	Introduccion	1 min
+	Indice			1 min
+	Desarrollo		10 min
+	Video/Demo		5 min
+	Conclusion		1 min
+	Preguntas		1 min
+	Actividad		1 min
+
+htt://goo.gl/VnmBP1
+viernes 02/08/2013	11:00	salon videoconferencias
+
+
+**************************************************
+
+CONCURRENCIA
+
+Problemas:
+
+transaccion no cometida
+
+transaccion perdida
+
+analisis inconsistente
+
+************************************************
+
+Productividad	Tiempo de espera
+
+
+Tipo de bloqueo basado en grafos:
+
+
+				A
+
+		B 				C
+
+	D 		E 		F 		G
+
+H 		I
+
+no hay ciclos, cada nodo solo tiene un padre
+
+Protocolo Optimista:
+	- Protocolo basado en validacion (pag. 542/396)
+		- Fases: Lectura, validacion, escritura.
+
+	Se da por entendido que puede ocurrir un problema y se garantiza que no ocurra.
+
+
+Protocolo Pesimista:
+
+Siguiente dia de clase corto sobre tipos protocolo
+
+interbloqueos
+	- inanicion
+	- espera indefinida
+
+Solucionar interbloqueos
+
+- prevencion
+- reaccion
+- recuperacion
+
+Prevencion:
+	- planificacion
+	- politicas
+		- esquemas basados en limites de tiempo
+
+Reaccion:
+	- Deteccion
+	- Elimiacion
+
+Recuperacion: Seleccione transaccion a terminar, retroceso, inanicion
+	- rollback
+	- reiniciar
+
+
+26 agosto examen
+
+Tarea: 
+1. mapa conceptual mejorado
+2. adjuntar mapa a mano
+3. resumen ejecutivo de capitulo de control de concurrencia Korth 5.ta edicion (1hoja)
+4. prepararse para corto

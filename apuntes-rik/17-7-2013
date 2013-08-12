@@ -1,0 +1,68 @@
+stiasociados@yahoo.com
+
+Transaccion: Para lunes transacciones (libro)
+
+Conjunto de operaciones de i/o que se hacen todas o ninguna en la base de datos. (lecturas, escrituras , consulta)
+
+Propiedades transaccion
+
+- Atomicidad:	Todas las operaciones L/E se realicen o no se haga ninguna.
+- Consistencia:	La ejecucion aislada de la transaccion conserva la consistencia de la base de datos.
+- aIslamiento:	
+- Durabilidad:	
+
+ESTADOS DE UNA TRANSACCION
+
+Inicio	------->	Parcialmente comprometida		Comprometida
+				|
+	|_			V
+	  --->		Fallida					Abortada
+
+parcialmente comprometida : despues de terminar la ultima operacion.
+
+comprometida: si todo esta bien, pasa a este estado.
+
+*********
+
+La productividad del sistema es el # de transacciones que se pueden ejecutar en un tiempo dado.
+
+
+T1		|		T2
+Leer(A)
+A:=A-50
+Escribir(A)
+Leer (B)
+B:=B+50
+ESCRIBIR(B)
+		LEER(A)
+		temp:=A*0.1
+		A:=A-temp
+		ESCRIBIR(A)
+		LEER(B)
+		B:=B+temp
+
+
+CONCURRENTE:
+
+T1		|		T2
+LOCK(A)
+LEER(A)
+A:=A-50
+ESCRIBIR (A)
+RELEASE(A)
+		LOCK(A)
+		LEER(A)
+		temp:=A*0.1
+		A:=A-temp
+		ESCRIBIR(A)
+		RELEASE(A)
+LOCK(B)
+LEER(B)
+B:=B+50
+ESCRIBIR(B)
+RELEASE(B)
+		LOCK(B)
+		LEER(B)
+		B:=B+temp
+		ESCRIBIR(B)	
+		RELEASE(B)
